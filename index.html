@@ -2,51 +2,15 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>PanelBreak</title>
-  <link rel="stylesheet" href="style.css?v=1020">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PanelBreak: Crystal Blast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-D8jk_pFU.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CLsK-2x2.css">
 </head>
 <body>
-
-<div id="outer">
-<!-- ▼ タイトル画面 ▼ -->
-<div id="title-screen">
-  <h1>PanelBreak</h1>
-  <button id="btn-timeattack">1分タイムアタック</button>
-  <button id="btn-endless">エンドレス</button>
-</div>
-<!-- ▲ タイトル画面 ▲ -->
-  <div id="game-wrapper">
-
-    <div id="hud-top">
-      <div id="score">0</div>
-      <div id="timer">100.0</div>
-    </div>
-
-    <div id="combo-ui">
-      <div id="combo-text"></div>
-      <div id="combo-gauge">
-        <div id="combo-gauge-fill"></div>
-      </div>
-    </div>
-
-    <div id="game"></div>
-
-    <div id="game-over-overlay">
-      <div id="game-over-text">TIME UP</div>
-      <div id="final-score-label">SCORE</div>
-      <div id="final-score-value">0</div>
-      <button id="retry-button">リトライ</button>
-      <button id="back-to-title">タイトルへ</button>
-    </div>
-
-  </div>
-</div>
-
-<script src="game.js"></script>
-<script>
-  document.getElementById("btn-timeattack").onclick = () => startGame("timeattack");
-  document.getElementById("btn-endless").onclick = () => startGame("endless");
-</script>
+  <div id="root"></div>
 </body>
 </html>
